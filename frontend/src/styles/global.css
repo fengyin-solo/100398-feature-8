@@ -35,3 +35,25 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 预警发布·回执筛选台 */
+.receipt-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.receipt-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.receipt-head h3 { margin: 0; font-size: 15px; }
+.unit-switch { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.scope-hint { color: #b45309; font-size: 12px; margin: 8px 0 0; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.tag-chip { border: 1px solid var(--border); background: #f8fafc; border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 12px; }
+.tag-chip.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+.filter-item select, .filter-item input { padding: 4px 6px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+.batch-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.batch-bar .hint { font-size: 12px; color: var(--muted); }
+.batch-message { font-size: 12px; color: #047857; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.receipt-tag { background: #eef2f7; border-radius: 999px; padding: 2px 10px; font-size: 12px; white-space: nowrap; }
+.receipt-tag[data-tag='超时响应'] { background: #fee2e2; color: #b42318; }
+.receipt-tag[data-tag='未响应'] { background: #fef3c7; color: #b45309; }
+.receipt-tag[data-tag='待分派'] { background: #e0e7ff; color: #3730a3; }
+.receipt-tag[data-tag='误报'] { background: #f3f4f6; color: #6b7280; }
+.unassigned { color: #b42318; font-weight: 600; }
+.detail-title { margin: 16px 0 8px; font-size: 15px; }
